@@ -1,0 +1,8 @@
+<button
+  (click)="handleClick()"
+  [disabled]="isDisabled"
+  [ngClass]="{ disabled: isDisabled }"
+  [type]="buttonType"
+>
+  {{ title }}
+</button>
