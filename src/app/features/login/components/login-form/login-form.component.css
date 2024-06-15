@@ -1,48 +1,51 @@
 .form-group {
   margin-bottom: 20px;
-}
 
-label {
-  display: block;
-  font-weight: bold;
-}
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
 
-h2 {
-  text-align: center;
-}
+  h2 {
+    text-align: center;
+  }
 
-input[type="text"],
-input[type="password"] {
+  input[type="text"],
+  input[type="password"] {
 
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 98%;
-}
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 98%;
+  }
 
-button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  width: 100%;
-}
+  button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+  }
 
-.login-container button:hover {
-  border: 1px solid #0056b3;
-}
+  .login-container {
+    button:hover {
+      border: 1px solid #0056b3;
+    }
+  }
 
-.valid-submit {
-  background-color: green;
-  color: white;
-}
+  .valid-submit {
+    background-color: green;
+    color: white;
+  }
 
-.invalid-submit {
-  background-color: red;
-  color: white;
-}
+  .invalid-submit {
+    background-color: red;
+    color: white;
+  }
 
-.error-message {
-  color: red;
+  .error-message {
+    color: red;
+  }
 }
