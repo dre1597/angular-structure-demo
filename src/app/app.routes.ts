@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { LoginComponent } from './login/login.component';
-import { TodoComponent } from './todo/todo.component';
+import { LoginComponent } from './features/login/login.component';
+import { TodoComponent } from './features/todo/todo.component';
 
 import { AuthGuard } from './core/auth/auth.guard';
 import { IsLoggedGuard } from './core/auth/is-logged.guard';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './features/about/about.component';
 
 export const routes: Routes = [
   {

@@ -7,14 +7,14 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { AuthService } from '../../../core/auth/auth.service';
+import { AuthService } from '../../../../core/auth/auth.service';
 import {
   PASSWORD_MIN_LENGTH,
   PHONE_MAX_LENGTH,
   PHONE_MIN_LENGTH,
 } from '../../constants';
 import { NgxMaskDirective } from 'ngx-mask';
-import { MainButtonComponent } from '../../../shared/components/main-button.component';
+import { MainButtonComponent } from '../../../../shared/components/main-button.component';
 import { Router } from '@angular/router';
 
 @Component({
