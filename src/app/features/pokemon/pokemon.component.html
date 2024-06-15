@@ -1,0 +1,7 @@
+<div class="list-container">
+  @for (item of items$ | async; track item.name) {
+    <div (click)="goToDetails(item.id!)" class="pokemon-card">
+      <h3 class="pokemon-name">{{ item.name }}</h3>
+    </div>
+  }
+</div>
