@@ -15,6 +15,7 @@ export class AuthService {
   public login(phone: string, password: string): boolean {
     if (phone && password) {
       localStorage.setItem('auth_token', 'your-token');
+      localStorage.setItem('last_login', Date.now().toString());
       return true;
     }
     return false;
@@ -23,6 +24,7 @@ export class AuthService {
   public logout(): void {
     if (typeof localStorage !== 'undefined') {
       localStorage.removeItem('auth_token');
+      window.location.reload();
     }
   }
 }

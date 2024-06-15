@@ -1,0 +1,22 @@
+<header>
+  @if (authService.isAuthenticated()) {
+    <ul class="logged">
+      @for (route of loggedRoutes; track route.name) {
+        <li>
+          <a [routerLink]="route.url">{{ route.name }}</a>
+        </li>
+      }
+      <li>
+        <a (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  } @else {
+    <ul>
+      @for (route of notLoggedRoutes; track route.name) {
+        <li>
+          <a [routerLink]="route.url">{{ route.name }}</a>
+        </li>
+      }
+    </ul>
+  }
+</header>
